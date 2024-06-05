@@ -1,0 +1,27 @@
+{
+  "adapter01": {
+    "0": "uniswapv2",
+    "1": "zeroxv4",
+    "2": "zeroxv2",
+    "3": "curve",
+    "4": "uniswapv2forks",
+    "5": "balancer",
+    "6": "uniswapv3",
+    "7": "aaveev2",
+    "8": "oneinchpool",
+    "9": "smoothyv1"
+  },
+  "adapter02": {
+    "0": "aavee",
+    "1": "bancor",
+    "2": "compound",
+    "3": "Dodo",
+    "4": "kyber",
+    "5": "Shell",
+    "6": "uniswap",
+    "7": "weth",
+    "8": "DODOV2",
+    "9": "OneBit",
+    "10": "SaddelAdapter"
+  }
+}

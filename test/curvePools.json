@@ -1,0 +1,22 @@
+{
+  "Compound": {
+    "underlying": ["DAI", "USDC"],
+    "coins": ["cDAI", "cUSDC"],
+    "name": "Compound"
+  },
+  "USDT": {
+    "underlying": ["DAI", "USDC", "USDT"],
+    "coins": ["cDAI", "cUSDC", "USDT"],
+    "name": "USDT"
+  },
+  "iEarn": {
+    "underlying": ["DAI", "USDC", "USDT", "TUSD"],
+    "coins": ["yDAI", "yUSDC", "yUSDT", "yTUSD"],
+    "name": "iEarn"
+  },
+  "iEarnUSDB": {
+    "underlying": ["DAI", "USDC", "USDT", "BUSD"],
+    "coins": ["yDAIv3", "yUSDCv3", "yUSDTv3", "yBUSD"],
+    "name": "iEarnUSDB"
+  }
+}

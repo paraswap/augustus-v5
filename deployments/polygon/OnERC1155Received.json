@@ -1,0 +1,310 @@
+{
+  "address": "0xbe01391a514d332a0b949a74aE701102E018f421",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes16",
+          "name": "uuid",
+          "type": "bytes16"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "partner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "feePercent",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "initiator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "srcToken",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "destToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "srcAmount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "receivedAmount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "expectedAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "BoughtV3",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes16",
+          "name": "uuid",
+          "type": "bytes16"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "partner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "feePercent",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "initiator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "srcToken",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "destToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "srcAmount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "receivedAmount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "expectedAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "SwappedV3",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "ROUTER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "WHITELISTED_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getKey",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_ids",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "_values",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155BatchReceived",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC1155Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x1668bad0e943bd44b70ebf679c19caf9d672701210e73c5dc2099d8ffd43744a",
+  "receipt": {
+    "to": null,
+    "from": "0x22f3Bdd1135e62BA7EE980eD53dED634E412869c",
+    "contractAddress": "0xbe01391a514d332a0b949a74aE701102E018f421",
+    "transactionIndex": 8,
+    "gasUsed": "308541",
+    "logsBloom": "0x02000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000800000000000400000000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000200200000000000000000000000000000000000000000000004000000000004000000000000000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0x92a3e212c6a96b1f287ef1a9948b4d29ac2bfbc91b113c8df1d2d0ca57092aad",
+    "transactionHash": "0x1668bad0e943bd44b70ebf679c19caf9d672701210e73c5dc2099d8ffd43744a",
+    "logs": [
+      {
+        "transactionIndex": 8,
+        "blockNumber": 29524129,
+        "transactionHash": "0x1668bad0e943bd44b70ebf679c19caf9d672701210e73c5dc2099d8ffd43744a",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x00000000000000000000000022f3bdd1135e62ba7ee980ed53ded634e412869c",
+          "0x0000000000000000000000007c7379531b2aee82e4ca06d4175d13b9cbeafd49"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000000000ea1de4d410e25a000000000000000000000000000000000000000000000002f47c70882fe44be40000000000000000000000000000000000000000000115c4a80a44b93b575dd9000000000000000000000000000000000000000000000002f39252a35bd3698a0000000000000000000000000000000000000000000115c4a8f4629e0f684033",
+        "logIndex": 32,
+        "blockHash": "0x92a3e212c6a96b1f287ef1a9948b4d29ac2bfbc91b113c8df1d2d0ca57092aad"
+      }
+    ],
+    "blockNumber": 29524129,
+    "cumulativeGasUsed": "1211723",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "bytecode": "0x608060405234801561001057600080fd5b506104a6806100206000396000f3fe608060405234801561001057600080fd5b50600436106100725760003560e01c806382678dd61161005057806382678dd61461010b578063bc197c8114610113578063f23a6e611461028257610072565b806330d643b514610077578063439fab91146100915780637a3226ec14610103575b600080fd5b61007f610324565b60408051918252519081900360200190f35b610101600480360360208110156100a757600080fd5b8101906020810181356401000000008111156100c257600080fd5b8201836020820111156100d457600080fd5b803590602001918460018302840111640100000000831117156100f657600080fd5b509092509050610348565b005b61007f6103af565b61007f6103d3565b61024d600480360360a081101561012957600080fd5b73ffffffffffffffffffffffffffffffffffffffff823581169260208101359091169181019060608101604082013564010000000081111561016a57600080fd5b82018360208201111561017c57600080fd5b8035906020019184602083028401116401000000008311171561019e57600080fd5b9193909290916020810190356401000000008111156101bc57600080fd5b8201836020820111156101ce57600080fd5b803590602001918460208302840111640100000000831117156101f057600080fd5b91939092909160208101903564010000000081111561020e57600080fd5b82018360208201111561022057600080fd5b8035906020019184600183028401116401000000008311171561024257600080fd5b509092509050610441565b604080517fffffffff000000000000000000000000000000000000000000000000000000009092168252519081900360200190f35b61024d600480360360a081101561029857600080fd5b73ffffffffffffffffffffffffffffffffffffffff823581169260208101359091169160408201359160608101359181019060a0810160808201356401000000008111156102e557600080fd5b8201836020820111156102f757600080fd5b8035906020019184600183028401116401000000008311171561031957600080fd5b50909250905061046e565b7f7a05a596cb0ce7fdea8a1e1ec73be300bdb35097c944ce1897202f7a13122eb281565b604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601660248201527f4d4554484f44204e4f5420494d504c454d454e54454400000000000000000000604482015290519081900360640190fd5b7f8429d542926e6695b59ac6fbdcd9b37e8b1aeb757afab06ab60b1bb5878c3b4981565b604080517f6f6e4552433131353552656365697665640000000000000000000000000000006020808301919091527f312e302e300000000000000000000000000000000000000000000000000000006031830152825160168184030181526036909201909252805191012090565b7fbc197c819b3e337a6f9652dd10becd7eef83032af3b9d958d3d42f669414662198975050505050505050565b7ff23a6e612e1ff4830e658fe43f4e3cb4a5f8170bd5d9e69fb5d7a7fa9e4fdf97969550505050505056fea164736f6c6343000705000a",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100725760003560e01c806382678dd61161005057806382678dd61461010b578063bc197c8114610113578063f23a6e611461028257610072565b806330d643b514610077578063439fab91146100915780637a3226ec14610103575b600080fd5b61007f610324565b60408051918252519081900360200190f35b610101600480360360208110156100a757600080fd5b8101906020810181356401000000008111156100c257600080fd5b8201836020820111156100d457600080fd5b803590602001918460018302840111640100000000831117156100f657600080fd5b509092509050610348565b005b61007f6103af565b61007f6103d3565b61024d600480360360a081101561012957600080fd5b73ffffffffffffffffffffffffffffffffffffffff823581169260208101359091169181019060608101604082013564010000000081111561016a57600080fd5b82018360208201111561017c57600080fd5b8035906020019184602083028401116401000000008311171561019e57600080fd5b9193909290916020810190356401000000008111156101bc57600080fd5b8201836020820111156101ce57600080fd5b803590602001918460208302840111640100000000831117156101f057600080fd5b91939092909160208101903564010000000081111561020e57600080fd5b82018360208201111561022057600080fd5b8035906020019184600183028401116401000000008311171561024257600080fd5b509092509050610441565b604080517fffffffff000000000000000000000000000000000000000000000000000000009092168252519081900360200190f35b61024d600480360360a081101561029857600080fd5b73ffffffffffffffffffffffffffffffffffffffff823581169260208101359091169160408201359160608101359181019060a0810160808201356401000000008111156102e557600080fd5b8201836020820111156102f757600080fd5b8035906020019184600183028401116401000000008311171561031957600080fd5b50909250905061046e565b7f7a05a596cb0ce7fdea8a1e1ec73be300bdb35097c944ce1897202f7a13122eb281565b604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601660248201527f4d4554484f44204e4f5420494d504c454d454e54454400000000000000000000604482015290519081900360640190fd5b7f8429d542926e6695b59ac6fbdcd9b37e8b1aeb757afab06ab60b1bb5878c3b4981565b604080517f6f6e4552433131353552656365697665640000000000000000000000000000006020808301919091527f312e302e300000000000000000000000000000000000000000000000000000006031830152825160168184030181526036909201909252805191012090565b7fbc197c819b3e337a6f9652dd10becd7eef83032af3b9d958d3d42f669414662198975050505050505050565b7ff23a6e612e1ff4830e658fe43f4e3cb4a5f8170bd5d9e69fb5d7a7fa9e4fdf97969550505050505056fea164736f6c6343000705000a"
+}
